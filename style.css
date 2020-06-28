@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body{
+    padding:0;
+    margin: 0;
+    background-color:  hsl(230, 17%, 14%);
+    font-family: "inter", sans-serif;
+
+
+
+}
+body.night{
+    background: white;
+    color: hsl(228, 34%, 66%);
+}
+body.night .social h2,
+body.night .container h1,
+body.night .container2 h2{
+    color:black;
+}
+body.night .card{
+    background-color:hsl(227, 47%, 96%);
+    color: hsl(228, 34%, 66%);
+}
+
+.toggle{
+    position: absolute;
+    background:linear-gradient(to right, #378fe6, #3eda82);
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active{
+    background: grey;
+}
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background:black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.action{
+    background: grey;
+}
+.toggle.active:before{
+    left:28px;
+     background-color: white;
+}
+
+
+.btn-tog .toggle{
+    margin-top: -33px;
+    margin-left: 110px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    display: inline-flex;
+    
+}
+#head{
+    width: 95%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #63687e;
+    margin-left: 0px !important;
+    margin-left: 10px !important;
+
+
+}
+.mode{
+    color: white;
+    justify-content: flex-end;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-left: 70px;
+    margin-top: -10px;
+    flex-direction: column;
+}
+
+.container1{
+    display: flex;
+    
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}
+
+p{
+    letter-spacing: 2px;
+    color: hsl(228, 34%, 66%);
+}
+h1{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+}
+h2{
+    font-weight: 700;
+    color: white;
+}
+h3{
+    justify-content: space-around;
+    color: white;
+    margin-left: 5%;
+}
+.username{
+    color: hsl(228, 34%, 66%);
+}
+
+.card{
+    border-radius: 7px;
+    border: 2px;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: hsl(228, 28%, 20%);
+    padding: 10px 50px;
+    max-width: 300px;
+    width:185px;
+    margin: 20px;
+    
+
+}
+span{
+    color:hsl(163, 72%, 41%);
+    
+}
+#icon{
+    margin-bottom: 3px;
+}
+
+
+.mg{
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    color:  hsl(228, 34%, 66%);
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+#fb{
+    border-top: 4px solid hsl(208, 92%, 53%);
+    
+}
+#tw{
+    border-top: 4px solid hsl(203, 89%, 53%);
+
+}
+#insta{ 
+    border-top: 4px solid  hsl(329, 70%, 58%);
+}
+    
+
+#youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.count{
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(163, 72%, 41%);
+}
+.likes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+   
+   
+}
+.cmn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 20px;
+
+}
+.day-count{
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(163, 72%, 41%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#red{
+    color: hsl(356, 69%, 56%);
+}
+.img-c{
+    width: 8px;
+    height: 4px;
+    margin-top:15px;
+   
+    margin-right: 3px;
+}
+.container2{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border:2px;
+    flex-direction: row;
+    
+}
+
+
+
+@media (max-width: 549px){
+    .card{
+        width: 185px;
+
+    }
+    h3{
+        margin-left: 50px;
+    }
+    .btn-tog .toggle{
+        margin-left: 230px;
+       
+    }
+    
+    
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+    h3{
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    h3{
+        margin-left: 170px;
+    }
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    h3{
+        margin-left: 100px;
+    }
+}
+    
